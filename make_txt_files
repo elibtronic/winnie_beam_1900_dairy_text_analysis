@@ -1,0 +1,9 @@
+#!/bin/bash
+echo Creates a Text File for every PDF in this directory
+echo Doesnt stomp on file if already there
+
+for f in *.pdf
+do
+	touch "${f::-3}txt"
+done
+
